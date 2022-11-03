@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+html {
+    background-image: url(фон1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.text {
+  position: absolute;
+  width: 450px;
+  left: 50%;
+  margin-left: -225px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  }
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 320px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  left: 10px;
+  top: 280px;
+   display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+/* 3 */
+.btn-3 {
+  background: rgb(0,172,238);
+background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+.main{
+  display: block;
+}
+
+.main_foto {
+  -webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+  margin: 15px;
+  }
+
+.txt1 {
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
+}
+
+.txt2 {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 5px;
+}
+.container1 {
+  width: 300px;
+  max-width: 90%; /* Ширина слоя */
+    margin: 15px; /* Значение отступов */
+    padding: 5px; /* Поля вокруг текста */
+    display: block;
+    background: rgb(185, 222, 247); /* Цвет фона */
+    border-radius: 20px;
+    Position: absolute;
+    top: 400px;
+    left: 15px;
+   }
+
+   .container2 {
+    width: 300px;
+    max-width: 90%; /* Ширина слоя */
+      margin: 15px; /* Значение отступов */
+      padding: 5px; /* Поля вокруг текста */
+      display: block;
+      background: rgb(185, 222, 247); /* Цвет фона */
+      border-radius: 20px;
+      Position: absolute;
+      top: 20px;
+      left: 360px;
+     }
+
+     .container3 {
+      width: 300px;
+      max-width: 90%; /* Ширина слоя */
+        margin: 15px; /* Значение отступов */
+        padding: 7px; /* Поля вокруг текста */
+        background: rgb(185, 222, 247); /* Цвет фона */
+        border-radius: 20px;
+        Position: absolute;
+        top: 20px;
+        left: 710px;
+       }
+
+       .container4 {
+        width: 300px;
+        max-width: 90%; /* Ширина слоя */
+          margin: 15px; /* Значение отступов */
+          padding: 7px; /* Поля вокруг текста */
+          background: rgb(185, 222, 247); /* Цвет фона */
+          border-radius: 20px;
+          Position: absolute;
+          top: 20px;
+          left: 1060px;
+         }
+
+         .Links {
+          width: 400px;
+          max-width: 90%; /* Ширина слоя */
+          margin: 15px; /* Значение отступов */
+          padding: 7px; /* Поля вокруг текста */
+          background: rgb(185, 222, 247); /* Цвет фона */
+          border-radius: 20px;
+          Position: absolute;
+          top: 400px;
+          left: 1010px;
+           }
+
+           .links__title{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 5px;
+            display: block;
+           }
+
+           .linsk__link{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 5px;
+            display: block;
+            text-decoration: none;
+            color: #0a7cc9;
+            
+           }
+
+           .social-icons {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding-left: 0;
+          }
+          .social-icons>li {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+          }
+          .social-icons a {
+            Position: relative;
+            top: 225px;
+            right: 590px;
+            background-color: rgb(185, 222, 247);
+            display: block;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            transition: background-color .3s ease-in-out;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: .25rem;
+          }
+          .social-icons a:hover {
+            background-color: #ebebeb;
+          }
+          .social-icons a::before {
+            content: "";
+            position: absolute;
+            width: 1.3rem;
+            height: 1.3rem;
+            left: .65rem;
+            top: .65rem;
+            background: transparent no-repeat center center;
+            background-size: 100% 100%;
+          }
+          .social-icons .social-icon-instagraam::before {
+            background-image: url("inst.png");
+          }
+          .social-icons .social-icon-mail::before {
+            background-image: url("mail.png");
+          }
+          .social-icons .social-icon-telegram::before {
+            background-image: url("tlg.png");
+          }
